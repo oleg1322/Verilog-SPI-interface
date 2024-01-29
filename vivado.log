@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan 29 13:58:34 2024
+# Process ID: 22924
+# Current directory: C:/univercity/interfaces/lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22792 C:\univercity\interfaces\lab_2\lab_2.xpr
+# Log file: C:/univercity/interfaces/lab_2/vivado.log
+# Journal file: C:/univercity/interfaces/lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/univercity/interfaces/lab_2/lab_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 693.602 ; gain = 45.145
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SPI_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SPI_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/univercity/interfaces/lab_2/lab_2.srcs/sources_1/new/SPI_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/univercity/interfaces/lab_2/lab_2.srcs/sim_1/new/SPI_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim'
+"xelab -wto db0fda136135490684f1db86a79fc15e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SPI_tb_behav xil_defaultlib.SPI_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto db0fda136135490684f1db86a79fc15e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SPI_tb_behav xil_defaultlib.SPI_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SPI
+Compiling module xil_defaultlib.SPI_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SPI_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim/xsim.dir/SPI_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 29 13:59:14 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SPI_tb_behav -key {Behavioral:sim_1:Functional:SPI_tb} -tclbatch {SPI_tb.tcl} -view {C:/univercity/interfaces/SPI_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/univercity/interfaces/SPI_tb_behav.wcfg
+source SPI_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 761.914 ; gain = 30.770
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SPI_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 761.914 ; gain = 41.363
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 761.914 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 29 13:59:44 2024...

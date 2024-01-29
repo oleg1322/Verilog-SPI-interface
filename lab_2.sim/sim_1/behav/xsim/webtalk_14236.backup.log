@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 12 17:37:14 2023
+# Process ID: 14236
+# Current directory: C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim/xsim.dir/SPI_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/univercity/interfaces/lab_2/lab_2.sim/sim_1/behav/xsim/xsim.dir/SPI_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 12 17:37:15 2023...
